@@ -2,12 +2,14 @@
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Presentacion from '../components/Presentacion.astro';
+import NavContacto from '../components/NavContacto.astro';
 ---
 
 <Layout title='Mario Sales'>
 	<main>
 		<Presentacion />
-		<h2>
+		<NavContacto />
+		<h2 class='flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white'>
 			<svg
 				class='size-7'
 				xmlns='http://www.w3.org/2000/svg'
@@ -20,8 +22,9 @@ import Presentacion from '../components/Presentacion.astro';
 				stroke-linecap='round'
 				stroke-linejoin='round'
 				><path stroke='none' d='M0 0h24v24H0z' fill='none'></path><path d='M7 8l-4 4l4 4'></path><path
-					d='M17 8l4 4l-4 4'></path><path d='M14 4l-4 16'></path></svg>
-				Proyectos
+					d='M17 8l4 4l-4 4'></path><path d='M14 4l-4 16'></path></svg
+			>
+			Proyectos
 		</h2>
 		<ul role='list' class='link-card-grid'>
 			<Card
