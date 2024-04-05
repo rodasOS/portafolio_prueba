@@ -6,9 +6,6 @@ import NavContacto from '../components/NavContacto.astro';
 ---
 
 <Layout title='Mario Sales'>
-	<main>
-		<Presentacion />
-		<NavContacto />
 		<h2 class='flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white'>
 			<svg
 				class='size-7'
@@ -38,19 +35,9 @@ import NavContacto from '../components/NavContacto.astro';
 				body='Plataforma de juegos online con registro de usuarios'
 			/>
 		</ul>
-	</main>
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
 	.astro-a {
 		position: absolute;
 		top: -32px;

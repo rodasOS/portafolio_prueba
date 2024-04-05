@@ -1,0 +1,35 @@
+---
+import Selector from './Selector.astro';
+---
+
+<nav>
+	<Selector title='Proyectos' ruta='/' />
+	<Selector title='Experiencia' ruta='experiencia' />
+	<Selector title='Logros' ruta='logros' />
+</nav>
+
+<style>
+	nav {
+		border: solid 1px #ffffff17;
+		background-color: #1f2937;
+		margin: 1em 0;
+		display: flex;
+		gap: 20px;
+		align-items: center;
+		justify-content: center;
+		position: sticky;
+    top: 0;
+	}
+
+  .abajo{
+    width: 100vw;
+    transform: scale(1.5);
+  }
+</style>
+
+<script>
+  window.addEventListener('scroll', () => {
+    const header = document.querySelector('nav');
+    header?.classList.toggle('abajo', window.scrollY>0)
+  })
+</script>

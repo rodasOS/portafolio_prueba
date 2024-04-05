@@ -1,0 +1,19 @@
+---
+interface Props {
+	ruta: string;
+	title: string;
+}
+const { ruta, title } = Astro.props;
+---
+
+<a href={ruta}>{title}</a>
+
+<style>
+	a {
+    padding: 0.4em;
+
+    &:hover{
+      background-color: red;
+    }
+	}
+</style>
